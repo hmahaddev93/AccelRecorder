@@ -9,7 +9,7 @@ import SwiftUI
 import CoreMotion
 
 struct AccelRecordingView: View {
-    @ObservedObject var motion: MotionManager
+    @ObservedObject var motion: AccelMotionManager
     @State var isInitialState = true
     var body: some View {
         VStack {

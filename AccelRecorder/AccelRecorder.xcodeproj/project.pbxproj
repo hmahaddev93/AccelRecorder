@@ -14,7 +14,8 @@
 		84BA642228FD569F0062811D /* AccelRecorderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA642128FD569F0062811D /* AccelRecorderTests.swift */; };
 		84BA642C28FD569F0062811D /* AccelRecorderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA642B28FD569F0062811D /* AccelRecorderUITests.swift */; };
 		84BA642E28FD569F0062811D /* AccelRecorderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA642D28FD569F0062811D /* AccelRecorderUITestsLaunchTests.swift */; };
-		84BA643E28FD6E850062811D /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA643D28FD6E850062811D /* MotionManager.swift */; };
+		84BA643E28FD6E850062811D /* AccelMotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA643D28FD6E850062811D /* AccelMotionManager.swift */; };
+		84BA644628FD925B0062811D /* FileManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84BA644528FD925B0062811D /* FileManger.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +46,8 @@
 		84BA642728FD569F0062811D /* AccelRecorderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccelRecorderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84BA642B28FD569F0062811D /* AccelRecorderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelRecorderUITests.swift; sourceTree = "<group>"; };
 		84BA642D28FD569F0062811D /* AccelRecorderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelRecorderUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		84BA643D28FD6E850062811D /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		84BA643D28FD6E850062811D /* AccelMotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelMotionManager.swift; sourceTree = "<group>"; };
+		84BA644528FD925B0062811D /* FileManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManger.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,10 @@
 		84BA640F28FD569D0062811D /* AccelRecorder */ = {
 			isa = PBXGroup;
 			children = (
-				84BA641028FD569D0062811D /* AccelRecorderApp.swift */,
+				84BA644428FD92450062811D /* Shared */,
 				84BA643A28FD5CA50062811D /* RecordingView */,
 				84BA641428FD569F0062811D /* Assets.xcassets */,
+				84BA641028FD569D0062811D /* AccelRecorderApp.swift */,
 				84BA641628FD569F0062811D /* Preview Content */,
 			);
 			path = AccelRecorder;
@@ -133,9 +136,17 @@
 			isa = PBXGroup;
 			children = (
 				84BA641228FD569D0062811D /* AccelRecordingView.swift */,
-				84BA643D28FD6E850062811D /* MotionManager.swift */,
+				84BA643D28FD6E850062811D /* AccelMotionManager.swift */,
 			);
 			path = RecordingView;
+			sourceTree = "<group>";
+		};
+		84BA644428FD92450062811D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				84BA644528FD925B0062811D /* FileManger.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,8 +280,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				84BA641328FD569D0062811D /* AccelRecordingView.swift in Sources */,
+				84BA644628FD925B0062811D /* FileManger.swift in Sources */,
 				84BA641128FD569D0062811D /* AccelRecorderApp.swift in Sources */,
-				84BA643E28FD6E850062811D /* MotionManager.swift in Sources */,
+				84BA643E28FD6E850062811D /* AccelMotionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

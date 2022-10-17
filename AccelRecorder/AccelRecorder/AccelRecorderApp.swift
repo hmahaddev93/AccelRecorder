@@ -11,7 +11,7 @@ import SwiftUI
 struct AccelRecorderApp: App {
     var body: some Scene {
         WindowGroup {
-            AccelRecordingView(motion: MotionManager())
+            AccelRecordingView(motion: AccelMotionManager())
         }
     }
 }
